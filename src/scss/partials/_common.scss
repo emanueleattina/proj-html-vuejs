@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.row {
+    display: flex;
+}
+
 @for $i from 1 through 5 {
     .mt-#{$i}0 {
         margin-top: 10px * $i;
@@ -45,4 +49,10 @@
 .btn-red {
     background: $rosso;
     border-radius: 3px;
+}
+
+.btn-red-relief {
+    box-sizing: border-box;
+    background: $rosso;
+    border-bottom: 4px solid $rosso-scuro;
 }
