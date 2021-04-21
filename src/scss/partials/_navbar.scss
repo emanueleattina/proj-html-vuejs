@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background: $bianco;
+    .navbar-left {
+        .navbar-logo {
+            height: 25px;
+            vertical-align: middle;
+        }
+    }
+    .navbar-right {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                text-transform: uppercase;
+                color: $grigio;
+                font-weight: 600;
+                margin-left: 35px;
+                font-size: 0.75em;
+            }
+        }
+    }
+}

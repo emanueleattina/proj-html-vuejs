@@ -1,0 +1,38 @@
+.jumbo {
+    background: url('../img/jumbo-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    .jumbo-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $bianco;
+        text-transform: uppercase;
+        text-align: center;
+        .jumbo-text {
+            h2 {
+                font-size: 3.5em;
+                font-weight: 300;
+                letter-spacing: 3px;
+            }
+            h1 {
+                font-size: 5em;
+                font-weight: 800;
+                letter-spacing: 5px;
+            }
+        }
+        .jumbo-date {
+            border-top: 4px solid $bianco;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            width: 530px;
+            h4 {
+                font-size: 1em;
+                font-weight: 800;
+            }
+        }
+    }
+}
