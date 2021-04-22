@@ -1,0 +1,88 @@
+.footer-top {
+    padding: 50px 0;
+    background: $grigio-scuro;
+    .col-container {
+        h5 {
+            text-transform: uppercase;
+            font-size: 0.9em;
+            color: $bianco;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+        p {
+            color: $grigio-chiaro;
+            font-size: 0.85em;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+        .footer-social {
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 15px;
+                a {
+                    color: $bianco;
+                    text-decoration: none;
+                    i {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+        .footer-news {
+            list-style: none;
+            text-transform: uppercase;
+            li {
+                font-size: 0.75em;
+                color: $grigio;
+                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                padding: 6px 0;
+                i {
+                    color: $grigio-chiaro;
+                    font-size: 0.5em;
+                    padding: 0 10px;
+                }
+            }
+        }
+        .btn {
+            padding: 15px 20px;
+            font-size: 0.8em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+            img {
+                padding: 5px;
+                width: calc(100% / 4);
+            }
+        }
+    }
+}
+.footer-bottom {
+    padding: 30px 0;
+    background: $grigio-scurissimo;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85em;
+        .footer-bottom-left {
+            span {
+                color: $grigio;
+                opacity: 0.4;
+            }
+        }
+        .footer-bottom-right {
+            ul {
+                list-style: none;
+                display: flex;
+                color: $grigio;
+                li {
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}

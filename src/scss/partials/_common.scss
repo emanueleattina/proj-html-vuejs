@@ -20,6 +20,11 @@
     margin-left: -15px;
 }
 
+.pad-15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 @for $i from 1 through 10 {
     .mt-#{$i}0 {
         margin-top: 10px * $i;

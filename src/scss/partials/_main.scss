@@ -265,7 +265,7 @@
 
 .location {
     background: url('../img/location-bg.jpg');
-    padding: 90px 0;
+    padding: 100px 0;
     background-size: cover;
     background-position: center;
     color: $bianco;
@@ -278,8 +278,8 @@
         text-align: center;
         h3 {
             text-transform: uppercase;
-            font-size: 2em;
-            margin-bottom: 30px;
+            font-size: 2.15em;
+            margin-bottom: 35px;
             letter-spacing: 3px;
         }
         h4 {
@@ -320,8 +320,9 @@
             margin-bottom: 20px;
         }
         span {
-            color: $grigio;
+            color: $grigio-chiaro;
             font-style: italic;
+            font-size: 0.9em;
             a {
                 color: $rosso;
                 text-decoration: none;
@@ -336,10 +337,145 @@
             font-size: 1.25em;
         }
         p {
-            color: $grigio;
+            color: $grigio-chiaro;
             font-size: 0.85em;
             margin-bottom: 20px;
             line-height: 23px;
+        }
+    }
+}
+
+.ticket {
+    padding: 80px 0;
+    background: url('../img/ticket-bg.jpg');
+    text-align: center;
+    h3 {
+        text-transform: uppercase;
+        font-size: 2.15em;
+        margin-bottom: 35px;
+        letter-spacing: 3px;
+        color: $bianco;
+    }
+    .ticket-container {
+        display: flex;
+        flex-direction: column;
+        .ticket-price {
+            background: $grigio-chiarissimo;
+            padding: 25px 0;
+            h4 {
+                text-transform: uppercase;
+                color: $nero;
+                margin-bottom: 10px;
+                font-size: 1.25em;
+            }
+            span {
+                text-transform: uppercase;
+                color: $rosso;
+                font-weight: 700;
+            }
+        }
+        .ticket-info {
+            background: $bianco;
+            padding: 25px 0;
+            ul {
+                list-style: none;
+                color: $grigio;
+                font-style: italic;
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
+        .ticket-button {
+            button {
+                background: $rosso;
+                color: $bianco;
+                width: 100%;
+                padding: 15px 0;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.presentation-twitter {
+    padding: 100px 0;
+    .presentation {
+        h2 {
+            color: $grigio-scuro;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+        }
+    }
+    .twitter {
+        h2 {
+            color: $grigio-scuro;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+        }
+        .twitter-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .twitter-feed {
+                display: flex;
+                margin-bottom: 25px;
+                .feed-icon {
+                    padding-right: 20px;
+                    i {
+                        color: #1DA1F2;
+                        font-size: 1.75em;
+                        margin-top: 5px;
+                    }
+                }
+                .feed-comment {
+                    font-size: 0.85em;
+                    p {
+                        color: $grigio;
+                        margin-bottom: 15px;
+                        a {
+                            text-decoration: none;
+                            color: $rosso;
+                        }
+                    }
+                    span {
+                        font-style: italic;
+                        color: $grigio;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sponsors {
+    padding: 80px 0;
+    background: $grigio-chiarissimo;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    .sponsors-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            text-transform: uppercase;
+            font-size: 2.15em;
+            letter-spacing: 3px;
+            color: $nero;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $grigio;
+            font-size: 1em;
+            margin-bottom: 35px;
+            line-height: 25px;
+            width: 425px;
         }
     }
 }

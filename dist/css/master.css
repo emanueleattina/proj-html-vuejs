@@ -244,6 +244,11 @@ p {
   margin-left: -15px;
 }
 
+.pad-15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -750,7 +755,7 @@ p {
 
 .location {
   background: url("../img/location-bg.jpg");
-  padding: 90px 0;
+  padding: 100px 0;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -765,8 +770,8 @@ p {
 }
 .location .location-text h3 {
   text-transform: uppercase;
-  font-size: 2em;
-  margin-bottom: 30px;
+  font-size: 2.15em;
+  margin-bottom: 35px;
   letter-spacing: 3px;
 }
 .location .location-text h4 {
@@ -807,8 +812,9 @@ p {
   margin-bottom: 20px;
 }
 .news .news-card span {
-  color: #868686;
+  color: #c6c1bd;
   font-style: italic;
+  font-size: 0.9em;
 }
 .news .news-card span a {
   color: #f72b0c;
@@ -823,8 +829,221 @@ p {
   font-size: 1.25em;
 }
 .news .news-card p {
-  color: #868686;
+  color: #c6c1bd;
   font-size: 0.85em;
   margin-bottom: 20px;
   line-height: 23px;
+}
+
+.ticket {
+  padding: 80px 0;
+  background: url("../img/ticket-bg.jpg");
+  text-align: center;
+}
+.ticket h3 {
+  text-transform: uppercase;
+  font-size: 2.15em;
+  margin-bottom: 35px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.ticket .ticket-container {
+  display: flex;
+  flex-direction: column;
+}
+.ticket .ticket-container .ticket-price {
+  background: #f3f3f3;
+  padding: 25px 0;
+}
+.ticket .ticket-container .ticket-price h4 {
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+.ticket .ticket-container .ticket-price span {
+  text-transform: uppercase;
+  color: #f72b0c;
+  font-weight: 700;
+}
+.ticket .ticket-container .ticket-info {
+  background: #fff;
+  padding: 25px 0;
+}
+.ticket .ticket-container .ticket-info ul {
+  list-style: none;
+  color: #868686;
+  font-style: italic;
+}
+.ticket .ticket-container .ticket-info ul li {
+  padding: 10px 0;
+}
+.ticket .ticket-container .ticket-button button {
+  background: #f72b0c;
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.presentation-twitter {
+  padding: 100px 0;
+}
+.presentation-twitter .presentation h2 {
+  color: #272727;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+.presentation-twitter .twitter h2 {
+  color: #272727;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+}
+.presentation-twitter .twitter .twitter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed {
+  display: flex;
+  margin-bottom: 25px;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-icon {
+  padding-right: 20px;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-icon i {
+  color: #1DA1F2;
+  font-size: 1.75em;
+  margin-top: 5px;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment {
+  font-size: 0.85em;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment p {
+  color: #868686;
+  margin-bottom: 15px;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment p a {
+  text-decoration: none;
+  color: #f72b0c;
+}
+.presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment span {
+  font-style: italic;
+  color: #868686;
+}
+
+.sponsors {
+  padding: 80px 0;
+  background: #f3f3f3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.sponsors .sponsors-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsors .sponsors-title h3 {
+  text-transform: uppercase;
+  font-size: 2.15em;
+  letter-spacing: 3px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.sponsors .sponsors-title p {
+  color: #868686;
+  font-size: 1em;
+  margin-bottom: 35px;
+  line-height: 25px;
+  width: 425px;
+}
+
+.footer-top {
+  padding: 50px 0;
+  background: #272727;
+}
+.footer-top .col-container h5 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+.footer-top .col-container p {
+  color: #c6c1bd;
+  font-size: 0.85em;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+.footer-top .col-container .footer-social {
+  list-style: none;
+  display: flex;
+}
+.footer-top .col-container .footer-social li {
+  margin-right: 15px;
+}
+.footer-top .col-container .footer-social li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-top .col-container .footer-social li a i {
+  font-size: 1.5em;
+}
+.footer-top .col-container .footer-news {
+  list-style: none;
+  text-transform: uppercase;
+}
+.footer-top .col-container .footer-news li {
+  font-size: 0.75em;
+  color: #868686;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+.footer-top .col-container .footer-news li i {
+  color: #c6c1bd;
+  font-size: 0.5em;
+  padding: 0 10px;
+}
+.footer-top .col-container .btn {
+  padding: 15px 20px;
+  font-size: 0.8em;
+}
+.footer-top .col-container .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+.footer-top .col-container .gallery img {
+  padding: 5px;
+  width: calc(100% / 4);
+}
+
+.footer-bottom {
+  padding: 30px 0;
+  background: #161615;
+}
+.footer-bottom .footer-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+}
+.footer-bottom .footer-container .footer-bottom-left span {
+  color: #868686;
+  opacity: 0.4;
+}
+.footer-bottom .footer-container .footer-bottom-right ul {
+  list-style: none;
+  display: flex;
+  color: #868686;
+}
+.footer-bottom .footer-container .footer-bottom-right ul li {
+  margin-left: 3px;
 }
