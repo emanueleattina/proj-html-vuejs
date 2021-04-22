@@ -747,3 +747,51 @@ p {
   height: 450px;
   width: 100%;
 }
+
+.location {
+  background: url("../img/location-bg.jpg");
+  padding: 90px 0;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.location .location-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.location .location-text h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+.location .location-text h4 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+.location .location-text span {
+  margin-bottom: 20px;
+}
+.location .location-text span i {
+  font-size: 0.75em;
+  margin-right: 10px;
+}
+.location .location-text span a {
+  color: #f72b0c;
+  text-decoration: none;
+}
+.location .location-text .location-contacts {
+  width: 430px;
+  margin-top: 20px;
+  padding-top: 5px;
+  border-top: 3px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}

@@ -262,3 +262,51 @@
     height: 450px;
     width: 100%;
 }
+
+.location {
+    background: url('../img/location-bg.jpg');
+    padding: 90px 0;
+    background-size: cover;
+    background-position: center;
+    color: $bianco;
+    display: flex;
+    justify-content: center;
+    .location-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h3 {
+            text-transform: uppercase;
+            font-size: 2em;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        span {
+            margin-bottom: 20px;
+            i {
+                font-size: 0.75em;
+                margin-right: 10px;
+            }
+            a {
+                color: $rosso;
+                text-decoration: none;
+            }
+        }
+        .location-contacts {
+            width: 430px;
+            margin-top: 20px;
+            padding-top: 5px;
+            border-top: 3px solid $bianco;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -20px;
+        }
+    }
+}
