@@ -37,7 +37,7 @@
     background: url('../img/countdown-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     padding: 100px 0;
     text-align: center;
     .countdown-numbers {
@@ -98,4 +98,167 @@
             color: $grigio-chiaro;
         }
     }
+}
+
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .section-left {
+        h2 {
+            color: $grigio-scuro;
+            font-size: 2.25em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+    .section-right {
+        span {
+            color: $rosso;
+            font-style: italic;
+        }
+    }
+}
+
+.speakers {
+    padding: 80px 0;
+    background: $grigio-chiarissimo;
+    .section-right {
+        display: flex;
+        .btn-slider {
+            background: $rosso;
+            height: 32px;
+            width: 32px;
+            border-radius: 3px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            i {
+                color: $bianco;
+                font-size: 0.75em;
+            }
+        }
+    }
+    .speakers-container {
+        padding: 0 15px;
+        .speakers-card {
+            text-align: center;
+            img {
+                width: 100%;
+                margin-bottom: 15px;
+                border-radius: 5px;
+            }
+            h4 {
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                color: $grigio-scuro;
+            }
+            span {
+                font-style: italic;
+                color: $grigio-chiaro
+            }
+        }
+    }
+}
+
+.program {
+    padding: 120px 0;
+    background: $bianco;
+    .section-left {
+        display: flex;
+        align-items: center;
+        p {
+            color: $grigio;
+            margin-left: 35px;
+            font-size: 0.85em;
+            line-height: 20px;
+        }
+    }
+    .program-calendar {
+        background: $grigio-chiarissimo;
+        .program-calendar-navbar {
+            display: flex;
+            .navbar-day {
+                background: $rosso;
+                border-right: 1px solid $rosso-scuro;
+                color: $bianco;
+                width: 100%;
+                padding: 13px 25px;
+                h4 {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 1.15;
+                }
+                span {
+                    font-size: 0.85em;
+                    font-weight: 300;
+                }
+                &.active {
+                    background: $rosso-scuro;
+                }
+                &.last {
+                    border: none;
+                }
+            }
+        }
+        .program-calendar-content {
+            display: flex;
+            width: 100%;
+            padding-bottom: 50px;
+            .content-left {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+                padding-top: 50px;
+                span {
+                    margin-bottom: 20px;
+                    color: $grigio;
+                    text-transform: uppercase;
+                    font-size: 0.85em;
+                    i {
+                        margin-right: 15px;
+                    }
+                    &:last-child {
+                        color: $rosso;
+                        i {
+                            color: $grigio;
+                        }
+                    }
+                }
+            }
+            .content-right {
+                padding-left: 30px;
+                padding-top: 50px;
+                padding-right: 60px;
+                h3 {
+                    font-size: 1.5em;
+                    color: $nero;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    font-weight: 500;
+                }
+                p {
+                    color: $grigio;
+                    font-size: 0.85em;
+                    margin-bottom: 25px;
+                    font-weight: 400;
+                }
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+#map {
+    height: 450px;
+    width: 100%;
 }

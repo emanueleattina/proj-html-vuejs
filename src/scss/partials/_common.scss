@@ -15,25 +15,30 @@
     display: flex;
 }
 
-@for $i from 1 through 5 {
+.mar-15 {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@for $i from 1 through 10 {
     .mt-#{$i}0 {
         margin-top: 10px * $i;
     }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
     .mb-#{$i}0 {
         margin-bottom: 10px * $i;
     }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
     .ml-#{$i}0 {
         margin-left: 10px * $i;
     }
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 10 {
     .mr-#{$i}0 {
         margin-right: 10px * $i;
     }

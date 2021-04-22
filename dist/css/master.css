@@ -239,6 +239,11 @@ p {
   display: flex;
 }
 
+.mar-15 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -257,6 +262,26 @@ p {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .mb-10 {
@@ -279,6 +304,26 @@ p {
   margin-bottom: 50px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .ml-10 {
   margin-left: 10px;
 }
@@ -299,6 +344,26 @@ p {
   margin-left: 50px;
 }
 
+.ml-60 {
+  margin-left: 60px;
+}
+
+.ml-70 {
+  margin-left: 70px;
+}
+
+.ml-80 {
+  margin-left: 80px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
 .mr-10 {
   margin-right: 10px;
 }
@@ -317,6 +382,26 @@ p {
 
 .mr-50 {
   margin-right: 50px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+.mr-70 {
+  margin-right: 70px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.mr-90 {
+  margin-right: 90px;
+}
+
+.mr-100 {
+  margin-right: 100px;
 }
 
 .btn {
@@ -435,7 +520,7 @@ p {
   background: url("../img/countdown-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding: 100px 0;
   text-align: center;
 }
@@ -502,4 +587,163 @@ p {
 }
 .countdown .countdown-form ::placeholder {
   color: #c6c1bd;
+}
+
+.section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.section-top .section-left h2 {
+  color: #272727;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.section-top .section-right span {
+  color: #f72b0c;
+  font-style: italic;
+}
+
+.speakers {
+  padding: 80px 0;
+  background: #f3f3f3;
+}
+.speakers .section-right {
+  display: flex;
+}
+.speakers .section-right .btn-slider {
+  background: #f72b0c;
+  height: 32px;
+  width: 32px;
+  border-radius: 3px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.speakers .section-right .btn-slider i {
+  color: #fff;
+  font-size: 0.75em;
+}
+.speakers .speakers-container {
+  padding: 0 15px;
+}
+.speakers .speakers-container .speakers-card {
+  text-align: center;
+}
+.speakers .speakers-container .speakers-card img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.speakers .speakers-container .speakers-card h4 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #272727;
+}
+.speakers .speakers-container .speakers-card span {
+  font-style: italic;
+  color: #c6c1bd;
+}
+
+.program {
+  padding: 120px 0;
+  background: #fff;
+}
+.program .section-left {
+  display: flex;
+  align-items: center;
+}
+.program .section-left p {
+  color: #868686;
+  margin-left: 35px;
+  font-size: 0.85em;
+  line-height: 20px;
+}
+.program .program-calendar {
+  background: #f3f3f3;
+}
+.program .program-calendar .program-calendar-navbar {
+  display: flex;
+}
+.program .program-calendar .program-calendar-navbar .navbar-day {
+  background: #f72b0c;
+  border-right: 1px solid #b61f08;
+  color: #fff;
+  width: 100%;
+  padding: 13px 25px;
+}
+.program .program-calendar .program-calendar-navbar .navbar-day h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.15;
+}
+.program .program-calendar .program-calendar-navbar .navbar-day span {
+  font-size: 0.85em;
+  font-weight: 300;
+}
+.program .program-calendar .program-calendar-navbar .navbar-day.active {
+  background: #b61f08;
+}
+.program .program-calendar .program-calendar-navbar .navbar-day.last {
+  border: none;
+}
+.program .program-calendar .program-calendar-content {
+  display: flex;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.program .program-calendar .program-calendar-content .content-left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.program .program-calendar .program-calendar-content .content-left span {
+  margin-bottom: 20px;
+  color: #868686;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+.program .program-calendar .program-calendar-content .content-left span i {
+  margin-right: 15px;
+}
+.program .program-calendar .program-calendar-content .content-left span:last-child {
+  color: #f72b0c;
+}
+.program .program-calendar .program-calendar-content .content-left span:last-child i {
+  color: #868686;
+}
+.program .program-calendar .program-calendar-content .content-right {
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-right: 60px;
+}
+.program .program-calendar .program-calendar-content .content-right h3 {
+  font-size: 1.5em;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.program .program-calendar .program-calendar-content .content-right p {
+  color: #868686;
+  font-size: 0.85em;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+.program .program-calendar .program-calendar-content .content-right img {
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+}
+
+#map {
+  height: 450px;
+  width: 100%;
 }
