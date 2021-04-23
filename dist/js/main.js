@@ -8,9 +8,10 @@ var app = new Vue ({
         recentNews: recentNews,
         navbar: navbar,
         tickets: tickets,
+        twitterFeed: twitterFeed,
+        sponsors: sponsors,
     },
     methods: {
-        
 
     }
 });
