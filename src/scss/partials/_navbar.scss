@@ -17,9 +17,15 @@
             li {
                 text-transform: uppercase;
                 color: $grigio;
-                font-weight: 600;
+                font-weight: 700;
                 margin-left: 35px;
                 font-size: 0.75em;
+                text-decoration: none;
+                a {
+                    color: $grigio;
+                    text-decoration: none;
+                    font-weight: 700;
+                }
             }
         }
     }

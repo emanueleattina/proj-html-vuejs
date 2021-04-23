@@ -1,3 +1,37 @@
+navbar = [
+    {
+        label: 'home',
+        link: 'https://google.it',
+    },
+    {
+        label: 'pages',
+        link: 'https://google.it',
+    },
+    {
+        label: 'program',
+        link: 'https://google.it',
+    },
+    {
+        label: 'tickets',
+        link: 'https://google.it',
+    },
+    {
+        label: 'speakers',
+        link: 'https://google.it',
+    },
+    {
+        label: 'papers',
+        link: 'https://google.it',
+    },
+    {
+        label: 'blog',
+        link: 'https://google.it',
+    },
+    {
+        label: 'shortcodes',
+        link: 'https://google.it',
+    },
+];
 whoWhatWhy = [
     {
         icon: 'fa-trophy',

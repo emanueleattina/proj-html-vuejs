@@ -6,6 +6,7 @@ var app = new Vue ({
         whoWhatWhy: whoWhatWhy,
         speakers: speakers,
         recentNews: recentNews,
+        navbar: navbar,
     },
     methods: {
         
