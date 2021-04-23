@@ -11,8 +11,12 @@ var app = new Vue ({
         twitterFeed: twitterFeed,
         sponsors: sponsors,
         galleryImages: galleryImages,
+        speakerActive: 0,
+        index: 0,
     },
     methods: {
-
+        setActive: function(index) {
+            this.speakerActive = index;
+        },
     }
 });
