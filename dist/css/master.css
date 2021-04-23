@@ -558,10 +558,15 @@ p {
   text-align: center;
 }
 .countdown .countdown-numbers div {
-  padding: 20px 30px;
   margin: 0 10px;
   border-radius: 5px;
   color: #fff;
+  width: 140px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .countdown .countdown-numbers div h1 {
   font-weight: 800;
@@ -577,15 +582,12 @@ p {
 }
 .countdown .countdown-numbers div.hours {
   background: rgba(0, 0, 0, 0.6);
-  padding: 20px 40px;
 }
 .countdown .countdown-numbers div.mins {
   background: rgba(0, 0, 0, 0.45);
-  padding: 20px 40px;
 }
 .countdown .countdown-numbers div.secs {
   background: rgba(0, 0, 0, 0.25);
-  padding: 20px 40px;
 }
 .countdown .countdown-text {
   padding: 30px 0;
