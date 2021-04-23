@@ -32,7 +32,9 @@
                                     <a
                                     :href="nav.link"
                                     target="_blank"
-                                    :class=" (nav.active == true) ? 'active' : '' "> {{ nav.label }} </a></li>
+                                    :class=" (nav.active == true) ? 'active' : '' "> {{ nav.label }} 
+                                        <div class="nav-active"></div>
+                                    </a></li>
                                 <li>|</li>
                                 <li><i class="fas fa-search"></i></li>
                             </ul>
@@ -159,7 +161,20 @@
                         <div class="col-3" v-for="speaker in speakers">
                             <div class="speakers-container">
                                 <div class="speakers-card">
-                                    <img :src="'dist/img/' + speaker.profilePic" alt="">
+                                    <div class="overlay-img">
+                                        <div class="overlay">
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                        <img :src="'dist/img/' + speaker.profilePic" alt="">
+                                    </div>
                                     <h4> {{ speaker.name }} </h4>
                                     <span> {{ speaker.role }} </span>
                                 </div>
@@ -297,10 +312,11 @@
                         <div class="col-4" v-for="news in recentNews">
                             <div class="news-card">
                                 <div class="img">
-                                    <div class="sticky" v-if="news.sticky == true">
-                                        <span><i class="fas fa-bullhorn"></i>sticky post</span>
-                                    </div>
-                                    <img :src="'dist/img/' + news.thumbnail" alt="">
+                                    <div class="img-overlay"></div>
+                                        <div class="sticky" v-if="news.sticky == true">
+                                            <span><i class="fas fa-bullhorn"></i>sticky post</span>
+                                        </div>
+                                        <img :src="'dist/img/' + news.thumbnail" alt="">
                                 </div>
                                 
                                 <span> {{ news.date }} / {{ news.comments }} Comments</span>
@@ -511,11 +527,7 @@
                             <div class="col-container">
                                 <h5>recent news</h5>
                                 <ul class="footer-news">
-                                    <li><i class="fas fa-chevron-right"></i>sem porta mollis parturient</li>
-                                    <li><i class="fas fa-chevron-right"></i>nullam lorem mattis purus</li>
-                                    <li><i class="fas fa-chevron-right"></i>nibh sem sit ullamcorper</li>
-                                    <li><i class="fas fa-chevron-right"></i>donec luctus imperdiet</li>
-                                    <li><i class="fas fa-chevron-right"></i>magna pars studiorum</li>
+                                    <li v-for="news in recentNews"><i class="fas fa-chevron-right"></i> {{ news.title }} </li>
                                 </ul>
                             </div>
                         </div>
@@ -532,18 +544,7 @@
                             <div class="col-container">
                                 <h5>gallery from last year</h5>
                                 <div class="gallery">
-                                    <img src="dist/img/footer-post-1.jpg" alt="">
-                                    <img src="dist/img/footer-post-2.jpg" alt="">
-                                    <img src="dist/img/footer-post-3.jpg" alt="">
-                                    <img src="dist/img/footer-post-4.jpg" alt="">
-                                    <img src="dist/img/footer-post-5.jpg" alt="">
-                                    <img src="dist/img/footer-post-6.jpg" alt="">
-                                    <img src="dist/img/footer-post-7.jpg" alt="">
-                                    <img src="dist/img/footer-post-8.jpg" alt="">
-                                    <img src="dist/img/footer-post-9.jpg" alt="">
-                                    <img src="dist/img/footer-post-10.jpg" alt="">
-                                    <img src="dist/img/footer-post-11.jpg" alt="">
-                                    <img src="dist/img/footer-post-12.jpg" alt="">
+                                    <a :href="image.link" v-for="image in galleryImages"><img :src="'dist/img/' + image.img" alt=""></a>
                                 </div>
                             </div>
                         </div>

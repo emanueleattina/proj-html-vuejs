@@ -224,4 +224,54 @@ sponsors = [
         img: 'banner-6.jpg',
         link: '',
     }
+];
+galleryImages = [
+    {
+        img: 'footer-post-1.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-2.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-3.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-4.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-5.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-6.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-7.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-8.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-9.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-10.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-11.jpg',
+        link: '',
+    },
+    {
+        img: 'footer-post-12.jpg',
+        link: '',
+    }
 ]

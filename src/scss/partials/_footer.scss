@@ -54,10 +54,16 @@
             display: flex;
             flex-wrap: wrap;
             margin: 0 -5px;
-            img {
-                padding: 5px;
+            a {
+                display: flex;
+                flex-wrap: wrap;
                 width: calc(100% / 4);
+                img {
+                    padding: 5px;
+                    width: 100%;
+                }
             }
+            
         }
     }
 }

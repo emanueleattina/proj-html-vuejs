@@ -10,6 +10,7 @@ var app = new Vue ({
         tickets: tickets,
         twitterFeed: twitterFeed,
         sponsors: sponsors,
+        galleryImages: galleryImages,
     },
     methods: {
 

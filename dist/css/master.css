@@ -414,6 +414,7 @@ p {
   padding: 18px 30px;
   font-weight: 600;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-red {
@@ -455,9 +456,17 @@ p {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 2px;
+  position: relative;
 }
 .navbar .navbar-right ul li a.active {
   color: #f70ce3;
+}
+.navbar .navbar-right ul li a.active .nav-active {
+  width: 100%;
+  height: 3px;
+  background: #f70ce3;
+  position: absolute;
+  top: 20px;
 }
 
 .jumbo {
@@ -653,12 +662,39 @@ p {
 .speakers .speakers-container .speakers-card {
   text-align: center;
 }
-.speakers .speakers-container .speakers-card img {
+.speakers .speakers-container .speakers-card .overlay-img {
+  position: relative;
+  overflow: hidden;
+}
+.speakers .speakers-container .speakers-card .overlay-img .overlay {
+  background: rgba(247, 12, 227, 0.7);
+  display: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
   width: 100%;
-  margin-bottom: 15px;
+  height: 100%;
   border-radius: 5px;
 }
+.speakers .speakers-container .speakers-card .overlay-img .overlay a {
+  color: #fff;
+  text-decoration: none;
+}
+.speakers .speakers-container .speakers-card .overlay-img .overlay a i {
+  padding: 0 15px;
+  font-size: 1.75em;
+}
+.speakers .speakers-container .speakers-card .overlay-img:hover .overlay {
+  display: flex;
+}
+.speakers .speakers-container .speakers-card .overlay-img img {
+  width: 100%;
+  border-radius: 5px;
+  vertical-align: middle;
+}
 .speakers .speakers-container .speakers-card h4 {
+  margin-top: 15px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #272727;
@@ -825,12 +861,23 @@ p {
   position: relative;
   margin-bottom: 20px;
 }
+.news .news-card .img .img-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.news .news-card .img:hover .img-overlay {
+  display: flex;
+}
 .news .news-card .img .sticky {
   position: absolute;
   background: #272727;
   padding: 10px 15px;
   bottom: 0;
   right: 0;
+  z-index: 10;
 }
 .news .news-card .img .sticky span {
   color: #fff;
@@ -1081,9 +1128,14 @@ p {
   flex-wrap: wrap;
   margin: 0 -5px;
 }
-.footer-top .col-container .gallery img {
-  padding: 5px;
+.footer-top .col-container .gallery a {
+  display: flex;
+  flex-wrap: wrap;
   width: calc(100% / 4);
+}
+.footer-top .col-container .gallery a img {
+  padding: 5px;
+  width: 100%;
 }
 
 .footer-bottom {
