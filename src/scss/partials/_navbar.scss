@@ -8,6 +8,10 @@
         .navbar-logo {
             height: 25px;
             vertical-align: middle;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.85;
+            }
         }
     }
     .navbar-right {

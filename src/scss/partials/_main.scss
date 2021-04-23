@@ -31,6 +31,9 @@
                 a {
                     color: $rosso;
                     text-decoration: none;
+                    &:hover {
+                        color: $rosso-scuro;
+                    }
                 }
             }
         }
@@ -123,6 +126,10 @@
         span {
             color: $rosso;
             font-style: italic;
+            cursor: pointer;
+            &:hover {
+                color: $rosso-scuro;
+            }
         }
     }
 }
@@ -233,8 +240,14 @@
                 &.active {
                     background: $rosso-scuro;
                 }
+                &:hover {
+                    background: $rosso-scuro;
+                }
                 &.last {
                     border: none;
+                }
+                &.last:hover {
+                    background: $rosso;
                 }
             }
         }
@@ -395,6 +408,10 @@
                 color: $rosso;
                 text-decoration: none;
                 font-size: 1em;
+                cursor: pointer;
+                &:hover {
+                    color: $rosso-scuro;
+                }
             }
         }
         h4 {
@@ -482,6 +499,10 @@
                 padding: 15px 0;
                 text-transform: uppercase;
                 font-weight: 600;
+                cursor: pointer;
+                &:hover {
+                    background: $rosso-scuro
+                }
             }
         }
     }
@@ -529,6 +550,9 @@
                         a {
                             text-decoration: none;
                             color: $rosso;
+                            &:hover {
+                                color: $rosso-scuro;
+                            }
                         }
                     }
                     span {
@@ -569,5 +593,8 @@
     img {
         width: 100%;
         padding: 0 15px;
+        &:hover {
+            opacity: 0.85;
+        }
     }
 }

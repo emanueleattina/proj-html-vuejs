@@ -26,6 +26,9 @@
                     i {
                         font-size: 1.5em;
                     }
+                    &:hover {
+                        color: $rosso;
+                    }
                 }
             }
         }
@@ -39,6 +42,10 @@
                 display: flex;
                 align-items: center;
                 padding: 6px 0;
+                cursor: pointer;
+                &:hover {
+                    color: $grigio-chiaro;
+                }
                 i {
                     color: $grigio-chiaro;
                     font-size: 0.5em;
@@ -61,6 +68,9 @@
                 img {
                     padding: 5px;
                     width: 100%;
+                    &:hover {
+                        opacity: 0.75;
+                    }
                 }
             }
             
@@ -78,6 +88,10 @@
             span {
                 color: $grigio;
                 opacity: 0.4;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.75;
+                }
             }
         }
         .footer-bottom-right {
@@ -85,8 +99,14 @@
                 list-style: none;
                 display: flex;
                 color: $grigio;
+                margin-right: -3px;
                 li {
                     margin-left: 3px;
+                    margin-right: 3px;
+                    cursor: pointer;
+                    &:hover {
+                        color: $grigio-chiaro;
+                    }
                 }
             }
         }

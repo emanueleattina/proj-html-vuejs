@@ -60,10 +60,16 @@
 .btn-red {
     background: $rosso;
     border-radius: 3px;
+    &:hover {
+        background: $rosso-scuro
+    }
 }
 
 .btn-red-relief {
     box-sizing: border-box;
     background: $rosso;
     border-bottom: 4px solid $rosso-scuro;
+    &:hover {
+        background: $rosso-scuro
+    }
 }
