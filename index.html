@@ -87,19 +87,19 @@
                         <div class="col-12">
                             <div class="countdown-numbers">
                                 <div class="days">
-                                    <h1>3399</h1>
+                                    <h1> {{ days }} </h1>
                                     <span>days</span>
                                 </div>
                                 <div class="hours">
-                                    <h1>17</h1>
+                                    <h1> {{ hours }} </h1>
                                     <span>hours</span>
                                 </div>
                                 <div class="mins">
-                                    <h1>28</h1>
+                                    <h1> {{ minutes }} </h1>
                                     <span>mins</span>
                                 </div>
                                 <div class="secs">
-                                    <h1>17</h1>
+                                    <h1> {{ seconds }} </h1>
                                     <span>secs</span>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="row mar-15 mt-50">
-                        <div class="col-3" v-for="speaker in speakers">
+                        <div class="col-3" v-for="speaker in speakers" v-if="speaker.name != 'george bush'">
                             <div class="speakers-container">
                                 <div class="speakers-card">
                                     <div class="overlay-img">
