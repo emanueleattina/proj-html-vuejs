@@ -417,14 +417,14 @@ p {
 }
 
 .btn-red {
-  background: #f72b0c;
+  background: #f70ce3;
   border-radius: 3px;
 }
 
 .btn-red-relief {
   box-sizing: border-box;
-  background: #f72b0c;
-  border-bottom: 4px solid #b61f08;
+  background: #f70ce3;
+  border-bottom: 4px solid #b80aa9;
 }
 
 .navbar {
@@ -517,8 +517,12 @@ p {
   margin-bottom: 20px;
 }
 .who .who-container .who-content span {
-  color: #f72b0c;
+  color: #f70ce3;
   font-style: italic;
+}
+.who .who-container .who-content span a {
+  color: #f70ce3;
+  text-decoration: none;
 }
 
 .countdown {
@@ -607,7 +611,7 @@ p {
   letter-spacing: 5px;
 }
 .section-top .section-right span {
-  color: #f72b0c;
+  color: #f70ce3;
   font-style: italic;
 }
 
@@ -619,7 +623,7 @@ p {
   display: flex;
 }
 .speakers .section-right .btn-slider {
-  background: #f72b0c;
+  background: #f70ce3;
   height: 32px;
   width: 32px;
   border-radius: 3px;
@@ -675,8 +679,8 @@ p {
   display: flex;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day {
-  background: #f72b0c;
-  border-right: 1px solid #b61f08;
+  background: #f70ce3;
+  border-right: 1px solid #b80aa9;
   color: #fff;
   width: 100%;
   padding: 13px 25px;
@@ -691,7 +695,7 @@ p {
   font-weight: 300;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day.active {
-  background: #b61f08;
+  background: #b80aa9;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day.last {
   border: none;
@@ -717,7 +721,7 @@ p {
   margin-right: 15px;
 }
 .program .program-calendar .program-calendar-content .content-left span:last-child {
-  color: #f72b0c;
+  color: #f70ce3;
 }
 .program .program-calendar .program-calendar-content .content-left span:last-child i {
   color: #868686;
@@ -788,7 +792,7 @@ p {
   margin-right: 10px;
 }
 .location .location-text span a {
-  color: #f72b0c;
+  color: #f70ce3;
   text-decoration: none;
 }
 .location .location-text .location-contacts {
@@ -807,9 +811,29 @@ p {
 .news .news-card {
   padding: 0 15px;
 }
-.news .news-card img {
-  width: 100%;
+.news .news-card .img {
+  position: relative;
   margin-bottom: 20px;
+}
+.news .news-card .img .sticky {
+  position: absolute;
+  background: #272727;
+  padding: 10px 15px;
+  bottom: 0;
+  right: 0;
+}
+.news .news-card .img .sticky span {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: normal;
+}
+.news .news-card .img .sticky span i {
+  margin-right: 5px;
+}
+.news .news-card .img img {
+  width: 100%;
+  vertical-align: middle;
 }
 .news .news-card span {
   color: #c6c1bd;
@@ -817,7 +841,7 @@ p {
   font-size: 0.9em;
 }
 .news .news-card span a {
-  color: #f72b0c;
+  color: #f70ce3;
   text-decoration: none;
   font-size: 1em;
 }
@@ -863,7 +887,7 @@ p {
 }
 .ticket .ticket-container .ticket-price span {
   text-transform: uppercase;
-  color: #f72b0c;
+  color: #f70ce3;
   font-weight: 700;
 }
 .ticket .ticket-container .ticket-info {
@@ -879,7 +903,7 @@ p {
   padding: 10px 0;
 }
 .ticket .ticket-container .ticket-button button {
-  background: #f72b0c;
+  background: #f70ce3;
   color: #fff;
   width: 100%;
   padding: 15px 0;
@@ -930,7 +954,7 @@ p {
 }
 .presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment p a {
   text-decoration: none;
-  color: #f72b0c;
+  color: #f70ce3;
 }
 .presentation-twitter .twitter .twitter-container .twitter-feed .feed-comment span {
   font-style: italic;
