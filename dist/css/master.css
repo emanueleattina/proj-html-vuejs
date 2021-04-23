@@ -445,7 +445,7 @@ p {
 .navbar .navbar-right ul li {
   text-transform: uppercase;
   color: #868686;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 35px;
   font-size: 0.75em;
   text-decoration: none;
@@ -453,7 +453,8 @@ p {
 .navbar .navbar-right ul li a {
   color: #868686;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .jumbo {
@@ -833,6 +834,8 @@ p {
   text-transform: uppercase;
   font-weight: 600;
   font-style: normal;
+  font-size: 0.85em;
+  letter-spacing: 1px;
 }
 .news .news-card .img .sticky span i {
   margin-right: 5px;
@@ -844,7 +847,7 @@ p {
 .news .news-card span {
   color: #c6c1bd;
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .news .news-card span a {
   color: #f70ce3;
@@ -869,6 +872,9 @@ p {
   padding: 80px 0;
   background: url("../img/ticket-bg.jpg");
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .ticket h3 {
   text-transform: uppercase;
@@ -884,6 +890,23 @@ p {
 .ticket .ticket-container .ticket-price {
   background: #f3f3f3;
   padding: 25px 0;
+  position: relative;
+  overflow: hidden;
+}
+.ticket .ticket-container .ticket-price .ticket-featured {
+  background: #f70ce3;
+  position: absolute;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  right: -65px;
+  top: 20px;
+  transform: rotate(45deg);
+  width: 200px;
+}
+.ticket .ticket-container .ticket-price .ticket-featured span {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.85em;
 }
 .ticket .ticket-container .ticket-price h4 {
   text-transform: uppercase;

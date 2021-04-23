@@ -333,6 +333,8 @@
                     text-transform: uppercase;
                     font-weight: 600;
                     font-style: normal;
+                    font-size: 0.85em;
+                    letter-spacing: 1px;
                     i {
                         margin-right: 5px;
                     }
@@ -347,7 +349,7 @@
         span {
             color: $grigio-chiaro;
             font-style: italic;
-            font-size: 0.9em;
+            font-size: 1em;
             a {
                 color: $rosso;
                 text-decoration: none;
@@ -374,6 +376,9 @@
     padding: 80px 0;
     background: url('../img/ticket-bg.jpg');
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     h3 {
         text-transform: uppercase;
         font-size: 2.15em;
@@ -387,6 +392,23 @@
         .ticket-price {
             background: $grigio-chiarissimo;
             padding: 25px 0;
+            position: relative;
+            overflow: hidden;
+            .ticket-featured {
+                background: $rosso;
+                position: absolute;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                right: -65px;
+                top: 20px;
+                transform: rotate(45deg);
+                width: 200px;
+                span {
+                    color: $bianco;
+                    text-transform: capitalize;
+                    font-size: 0.85em;
+                }
+            }
             h4 {
                 text-transform: uppercase;
                 color: $nero;

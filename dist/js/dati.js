@@ -108,4 +108,72 @@ recentNews = [
         viewMore: 'Read More',
         link: 'https://google.it'
     }
+];
+tickets = [
+    {
+        name: 'one day pass',
+        price: 'free',
+        featured: false,
+        description: [
+            {
+                point: 'One Day Access',
+            },
+            {
+                point: 'Coffee Break',
+            },
+            {
+                point: 'Lunch (International Buffet)',
+            },
+            {
+                point: 'Document Sheets',
+            },
+            {
+                point: '50USD Voucher For Next Event',
+            }
+        ]
+    },
+    {
+        name: 'four day passes',
+        price: '750.00 USD',
+        featured: true,
+        description: [
+            {
+                point: 'Four Day Access',
+            },
+            {
+                point: 'Coffee Break',
+            },
+            {
+                point: 'Lunch (International Buffet)',
+            },
+            {
+                point: 'Document Sheets',
+            },
+            {
+                point: '100USD Voucher For Next Event',
+            }
+        ]
+    },
+    {
+        name: 'two day passes',
+        price: '580.00 USD',
+        featured: false,
+        description: [
+            {
+                point: 'One Day Access',
+            },
+            {
+                point: 'Coffee Break',
+            },
+            {
+                point: 'Lunch (International Buffet)',
+            },
+            {
+                point: 'Document Sheets',
+            },
+            {
+                point: '70USD Voucher For Next Event',
+            }
+        ]
+    },
 ]

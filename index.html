@@ -330,7 +330,26 @@
                 <div class="container">
                     <h3>tickets</h3>
                     <div class="row mt-50 mar-15">
-                        <div class="col-4 pad-15">
+                        <div class="col-4 pad-15" v-for="ticket in tickets">
+                            <div class="ticket-container">
+                                <div class="ticket-price">
+                                    <h4> {{ ticket.name }} </h4>
+                                    <span> {{ ticket.price }} </span>
+                                    <div class="ticket-featured" v-if="ticket.featured == true">
+                                        <span>Featured!</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-info">
+                                    <ul>
+                                        <li v-for="point in ticket.description"> {{ point.point }} </li>
+                                    </ul>
+                                </div>
+                                <div class="ticket-button">
+                                    <button>book now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-4 pad-15">
                             <div class="ticket-container">
                                 <div class="ticket-price">
                                     <h4>one day pass</h4>
@@ -369,27 +388,7 @@
                                     <button>book now</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-4 pad-15">
-                            <div class="ticket-container">
-                                <div class="ticket-price">
-                                    <h4>one day pass</h4>
-                                    <span>free</span>
-                                </div>
-                                <div class="ticket-info">
-                                    <ul>
-                                        <li>One Day Access</li>
-                                        <li>Coffe Break</li>
-                                        <li>Lunch (International Buffet)</li>
-                                        <li>Document Sheets</li>
-                                        <li>50USD Voucher For Next Event</li>
-                                    </ul>
-                                </div>
-                                <div class="ticket-button">
-                                    <button>book now</button>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
