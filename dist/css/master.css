@@ -420,18 +420,22 @@ p {
 .btn-red {
   background: #f70ce3;
   border-radius: 3px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn-red:hover {
   background: #b80aa9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-red-relief {
   box-sizing: border-box;
   background: #f70ce3;
   border-bottom: 4px solid #b80aa9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn-red-relief:hover {
   background: #b80aa9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .navbar {
@@ -445,9 +449,12 @@ p {
   height: 25px;
   vertical-align: middle;
   cursor: pointer;
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
 }
 .navbar .navbar-left .navbar-logo:hover {
   opacity: 0.85;
+  transition: all 0.15s ease-in-out;
 }
 .navbar .navbar-right ul {
   list-style: none;
@@ -467,6 +474,12 @@ p {
   font-weight: 700;
   letter-spacing: 2px;
   position: relative;
+  transition: all 0.15s ease-in-out;
+}
+.navbar .navbar-right ul li a:hover {
+  color: #161615;
+  opacity: 0.9;
+  transition: all 0.15s ease-in-out;
 }
 .navbar .navbar-right ul li a.active {
   color: #f70ce3;
@@ -524,13 +537,14 @@ p {
   flex-direction: row;
 }
 .who .who-container .who-icon {
-  color: #868686;
   display: flex;
   align-items: flex-start;
 }
 .who .who-container .who-icon i {
+  color: #868686;
   font-size: 1.5em;
   padding-right: 30px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .who .who-container .who-content {
   padding-right: 15px;
@@ -555,6 +569,10 @@ p {
 }
 .who .who-container .who-content span a:hover {
   color: #b80aa9;
+}
+.who .who-container:hover i {
+  color: #f70ce3;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .countdown {
@@ -749,6 +767,7 @@ p {
   color: #fff;
   width: 100%;
   padding: 13px 25px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day h4 {
   font-weight: 700;
@@ -764,6 +783,7 @@ p {
 }
 .program .program-calendar .program-calendar-navbar .navbar-day:hover {
   background: #b80aa9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day.last {
   border: none;
@@ -793,9 +813,15 @@ p {
 }
 .program .program-calendar .program-calendar-content .content-left span:last-child {
   color: #f70ce3;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 .program .program-calendar .program-calendar-content .content-left span:last-child i {
   color: #868686;
+}
+.program .program-calendar .program-calendar-content .content-left span:last-child:hover {
+  color: #b80aa9;
+  transition: all 0.15s ease-in-out;
 }
 .program .program-calendar .program-calendar-content .content-right {
   padding-left: 30px;
@@ -865,6 +891,11 @@ p {
 .location .location-text span a {
   color: #f70ce3;
   text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.location .location-text span a:hover {
+  color: #b80aa9;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .location .location-text .location-contacts {
   width: 430px;
@@ -880,21 +911,15 @@ p {
   padding: 80px 0;
 }
 .news .news-card {
-  padding: 0 15px;
+  padding: 15px 15px;
+  background: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
 }
 .news .news-card .img {
   position: relative;
   margin-bottom: 20px;
-}
-.news .news-card .img .img-overlay {
-  background: rgba(0, 0, 0, 0.3);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: none;
-}
-.news .news-card .img:hover .img-overlay {
-  display: flex;
+  cursor: pointer;
 }
 .news .news-card .img .sticky {
   position: absolute;
@@ -939,12 +964,18 @@ p {
   margin-bottom: 20px;
   letter-spacing: 3px;
   font-size: 1.25em;
+  cursor: pointer;
 }
 .news .news-card p {
   color: #c6c1bd;
   font-size: 0.85em;
   margin-bottom: 20px;
   line-height: 23px;
+  cursor: pointer;
+}
+.news .news-card:hover {
+  background: #f3f3f3;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .ticket {
@@ -965,6 +996,7 @@ p {
 .ticket .ticket-container {
   display: flex;
   flex-direction: column;
+  transition: all 0.2s ease-in-out;
 }
 .ticket .ticket-container .ticket-price {
   background: #f3f3f3;
@@ -1021,6 +1053,10 @@ p {
 }
 .ticket .ticket-container .ticket-button button:hover {
   background: #b80aa9;
+}
+.ticket .ticket-container:hover {
+  transform: scale(1.1);
+  transition: all 0.15s ease-in-out;
 }
 
 .presentation-twitter {
@@ -1105,9 +1141,12 @@ p {
 .sponsors img {
   width: 100%;
   padding: 0 15px;
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
 }
 .sponsors img:hover {
   opacity: 0.85;
+  transition: all 0.15s ease-in-out;
 }
 
 .footer-top {
@@ -1137,12 +1176,14 @@ p {
 .footer-top .col-container .footer-social li a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.15s ease-in-out;
 }
 .footer-top .col-container .footer-social li a i {
   font-size: 1.5em;
 }
 .footer-top .col-container .footer-social li a:hover {
   color: #f70ce3;
+  transition: all 0.15s ease-in-out;
 }
 .footer-top .col-container .footer-news {
   list-style: none;
@@ -1156,9 +1197,11 @@ p {
   align-items: center;
   padding: 6px 0;
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 .footer-top .col-container .footer-news li:hover {
   color: #c6c1bd;
+  transition: all 0.15s ease-in-out;
 }
 .footer-top .col-container .footer-news li i {
   color: #c6c1bd;
@@ -1182,9 +1225,12 @@ p {
 .footer-top .col-container .gallery a img {
   padding: 5px;
   width: 100%;
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
 }
 .footer-top .col-container .gallery a img:hover {
   opacity: 0.75;
+  transition: all 0.15s ease-in-out;
 }
 
 .footer-bottom {
@@ -1200,15 +1246,18 @@ p {
   color: #868686;
   opacity: 0.4;
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 .footer-bottom .footer-container .footer-bottom-left span:hover {
   opacity: 0.75;
+  transition: all 0.15s ease-in-out;
 }
 .footer-bottom .footer-container .footer-bottom-right ul {
   list-style: none;
   display: flex;
   color: #868686;
   margin-right: -3px;
+  transition: all 0.15s ease-in-out;
 }
 .footer-bottom .footer-container .footer-bottom-right ul li {
   margin-left: 3px;
@@ -1217,4 +1266,5 @@ p {
 }
 .footer-bottom .footer-container .footer-bottom-right ul li:hover {
   color: #c6c1bd;
+  transition: all 0.15s ease-in-out;
 }

@@ -5,12 +5,13 @@
         flex-direction: row;
         .who-icon {
             // margin-top: 5px;
-            color: $grigio;
             display: flex;
             align-items: flex-start;
             i {
+                color: $grigio;
                 font-size: 1.5em;
                 padding-right: 30px;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
             }
         }
         .who-content {
@@ -36,6 +37,10 @@
                     }
                 }
             }
+        }
+        &:hover i {
+            color: $rosso;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
     }
 }
@@ -228,6 +233,7 @@
                 color: $bianco;
                 width: 100%;
                 padding: 13px 25px;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
                 h4 {
                     font-weight: 700;
                     text-transform: uppercase;
@@ -242,6 +248,7 @@
                 }
                 &:hover {
                     background: $rosso-scuro;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
                 }
                 &.last {
                     border: none;
@@ -270,8 +277,14 @@
                     }
                     &:last-child {
                         color: $rosso;
+                        cursor: pointer;
+                        transition: all .15s ease-in-out;
                         i {
                             color: $grigio;
+                        }
+                        &:hover {
+                            color: $rosso-scuro;
+                            transition: all .15s ease-in-out;
                         }
                     }
                 }
@@ -344,6 +357,11 @@
             a {
                 color: $rosso;
                 text-decoration: none;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                &:hover {
+                    color: $rosso-scuro;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
             }
         }
         .location-contacts {
@@ -361,20 +379,24 @@
 .news {
     padding: 80px 0;
     .news-card {
-        padding: 0 15px;
+        padding: 15px 15px;
+        background: $bianco;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        cursor: pointer;
         .img {
             position: relative;
             margin-bottom: 20px;
-            .img-overlay {
-                background: rgba($color: $nero, $alpha: 0.3);
-                height: 100%;
-                position: absolute;
-                width: 100%;
-                display: none;
-            }
-            &:hover .img-overlay {
-                display: flex;
-            }
+            cursor: pointer;
+            // .img-overlay {
+            //     background: rgba($color: $nero, $alpha: 0.3);
+            //     height: 100%;
+            //     position: absolute;
+            //     width: 100%;
+            //     display: none;
+            // }
+            // &:hover .img-overlay {
+            //     display: flex;
+            // }
             .sticky {
                 position: absolute;
                 background: $grigio-scuro;
@@ -420,12 +442,18 @@
             margin-bottom: 20px;
             letter-spacing: 3px;
             font-size: 1.25em;
+            cursor: pointer;
         }
         p {
             color: $grigio-chiaro;
             font-size: 0.85em;
             margin-bottom: 20px;
             line-height: 23px;
+            cursor: pointer;
+        }
+        &:hover {
+            background: $grigio-chiarissimo;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
     }
 }
@@ -447,6 +475,8 @@
     .ticket-container {
         display: flex;
         flex-direction: column;
+        transition: all .2s ease-in-out;
+
         .ticket-price {
             background: $grigio-chiarissimo;
             padding: 25px 0;
@@ -504,6 +534,10 @@
                     background: $rosso-scuro
                 }
             }
+        }
+        &:hover {
+            transform: scale(1.1);
+            transition: all .15s ease-in-out;
         }
     }
 }
@@ -593,8 +627,11 @@
     img {
         width: 100%;
         padding: 0 15px;
+        opacity: 1;
+        transition: all .15s ease-in-out;
         &:hover {
             opacity: 0.85;
+            transition: all .15s ease-in-out;
         }
     }
 }
