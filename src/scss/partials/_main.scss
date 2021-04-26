@@ -146,6 +146,7 @@
         display: flex;
         .btn-slider {
             background: $rosso;
+            transition: all .15s ease-in-out;
             height: 32px;
             width: 32px;
             border-radius: 3px;
@@ -154,6 +155,11 @@
             justify-content: center;
             align-items: center;
             border: none;
+            cursor: pointer;
+            &:hover {
+                background: $rosso-scuro;
+                transition: all .15s ease-in-out;
+            }
             i {
                 color: $bianco;
                 font-size: 0.75em;
@@ -169,7 +175,10 @@
                 overflow: hidden;
                 .overlay {
                     background: rgba($color: $rosso, $alpha: 0.7);
-                    display: none;
+                    // display: none;
+                    display: flex;
+                    opacity: 0;
+                    transition: opacity .15s ease-in-out;
                     justify-content: center;
                     text-align: center;
                     align-items: center;
@@ -187,7 +196,8 @@
                     }
                 }
                 &:hover .overlay {
-                    display: flex;
+                    opacity: 1;
+                    transition: opacity .15s ease-in-out;
                 }
                 img {
                     width: 100%;
@@ -231,6 +241,7 @@
                 background: $rosso;
                 border-right: 1px solid $rosso-scuro;
                 color: $bianco;
+                cursor: pointer;
                 width: 100%;
                 padding: 13px 25px;
                 transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -252,6 +263,7 @@
                 }
                 &.last {
                     border: none;
+                    cursor: default;
                 }
                 &.last:hover {
                     background: $rosso;

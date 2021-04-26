@@ -680,6 +680,7 @@ p {
 }
 .speakers .section-right .btn-slider {
   background: #f70ce3;
+  transition: all 0.15s ease-in-out;
   height: 32px;
   width: 32px;
   border-radius: 3px;
@@ -688,6 +689,11 @@ p {
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
+}
+.speakers .section-right .btn-slider:hover {
+  background: #b80aa9;
+  transition: all 0.15s ease-in-out;
 }
 .speakers .section-right .btn-slider i {
   color: #fff;
@@ -705,7 +711,9 @@ p {
 }
 .speakers .speakers-container .speakers-card .overlay-img .overlay {
   background: rgba(247, 12, 227, 0.7);
-  display: none;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -723,7 +731,8 @@ p {
   font-size: 1.75em;
 }
 .speakers .speakers-container .speakers-card .overlay-img:hover .overlay {
-  display: flex;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
 }
 .speakers .speakers-container .speakers-card .overlay-img img {
   width: 100%;
@@ -765,6 +774,7 @@ p {
   background: #f70ce3;
   border-right: 1px solid #b80aa9;
   color: #fff;
+  cursor: pointer;
   width: 100%;
   padding: 13px 25px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -787,6 +797,7 @@ p {
 }
 .program .program-calendar .program-calendar-navbar .navbar-day.last {
   border: none;
+  cursor: default;
 }
 .program .program-calendar .program-calendar-navbar .navbar-day.last:hover {
   background: #f70ce3;
