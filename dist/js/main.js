@@ -19,7 +19,7 @@ var app = new Vue ({
         seconds: 0,
         isEnded: null,
         endDate: Date.parse('01 Jan 2022'),
-        
+        rowActive: true,     
     },
     methods: {
         setActive: function(index) {

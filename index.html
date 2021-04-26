@@ -123,10 +123,12 @@
                                 <h2>speakers</h2>
                             </div>
                             <div class="section-right">
-                                    <button class="btn-slider">
+                                    <button class="btn-slider"
+                                    @click="rowActive = !rowActive">
                                         <i class="fas fa-chevron-left"></i>
                                     </button>
-                                    <button class="btn-slider">
+                                    <button class="btn-slider"
+                                    @click="rowActive = !rowActive">
                                         <i class="fas fa-chevron-right"></i>
                                     </button>
                             </div>
@@ -134,7 +136,31 @@
                     </div>
 
                     <div class="row mar-15 mt-50">
-                        <div class="col-3" v-for="speaker in speakers" v-if="speaker.name != 'george bush'">
+                        <div class="col-3" v-for="(speaker, index) in speakers" v-if="index <4 && rowActive == true">
+                            <div class="speakers-container">
+                                <div class="speakers-card">
+                                    <div class="overlay-img">
+                                        <div class="overlay">
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+                                        <img :src="'dist/img/' + speaker.profilePic" alt="">
+                                    </div>
+                                    <h4> {{ speaker.name }} </h4>
+                                    <span> {{ speaker.role }} </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar-15">
+                        <div class="col-3" v-for="(speaker, index) in speakers" v-if="index >3 && rowActive == false">
                             <div class="speakers-container">
                                 <div class="speakers-card">
                                     <div class="overlay-img">
@@ -182,6 +208,7 @@
                                     <div class="navbar-day"
                                     :class="index === speakerActive ? 'active' : ''"
                                     v-for="(day, index) in speakers"
+                                    v-if="index < 5"
                                     @click="setActive(index)">
                                         <h4> {{ day.day }} </h4>
                                         <span> {{ day.date }} </span>
